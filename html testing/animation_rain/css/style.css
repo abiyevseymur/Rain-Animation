@@ -1,0 +1,186 @@
+.rain {
+    margin-left: 50px;
+    position: relative;
+}
+.col12{
+	width:660px;
+	margin:0 auto;
+    background-image: url("../img/rainy.jpg");	
+    background-size: 100% 100%;
+    
+    height: 400px;
+
+}
+[class*="col"] {
+   
+   float:left;
+   box-sizing: border-box;
+}
+.row{
+	width:100%;
+	height:auto;
+	display: block;
+}
+.col1 {
+width:6%;
+}
+.rain1{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    margin-left: 50px;
+    }
+.clear{
+    clear:both;
+}
+.left {
+    float: left;
+}
+margin{
+    padding-top: 20px;
+}
+.part1 {
+    width: 1px;
+    height: 30px;
+    background-color: #ece9d6;
+    border-radius: 100%;
+    position: relative;  
+    animation-name: example;
+    animation-iteration-count: infinite;  
+    animation-duration: 1s;
+}
+ .part2 {
+    width: 1px;
+    height: 30px;
+   
+    left: 20px;
+    background-color: #ece9d6;
+    border-radius: 100%;
+    position: relative;  
+    animation-name: example1;
+    animation-iteration-count: infinite;  
+    animation-duration: 1s;
+}
+ .part3 {
+    width: 1px;
+    height: 30px;
+   
+    left: 40px;
+    background-color: #ece9d6;
+    border-radius: 100%;
+    position: relative;  
+    animation-name: example;
+    animation-iteration-count: infinite;  
+    animation-duration: 1s;
+}
+ .part4 {
+    width: 1px;
+    height: 30px;
+    
+    left: 60px;
+    background-color: #ece9d6;
+    border-radius: 100%;
+    position: relative;  
+    animation-name: example1;
+    animation-iteration-count: infinite;  
+    animation-duration: 1s;
+}
+ .part5 {
+    width: 1px;
+    height: 30px;
+    ;
+    left: 80px;
+    background-color: #ece9d6;
+    border-radius: 100%;
+    position: relative;  
+    animation-name: example;
+    animation-iteration-count: infinite;  
+    animation-duration: 1s;
+}
+ .part6 {
+    width: 1px;
+    height: 30px;
+    
+    left: 100px;
+    background-color: #ece9d6;
+    border-radius: 100%;
+    position: relative;  
+    animation-name: example1;
+    animation-iteration-count: infinite;  
+    animation-duration: 1s;
+}
+ .part7 {
+    width: 1px;
+    height: 30px;
+   
+    left: 120px;
+    background-color: #ece9d6;
+    border-radius: 100%;
+    position: relative;  
+    animation-name: example;
+    animation-iteration-count: infinite;  
+    animation-duration: 1s;
+}
+ .part8 {
+    width: 1px;
+    height: 30px;
+    
+    left: 140px;
+    background-color: #ece9d6;
+    border-radius: 100%;
+    position: relative;  
+    animation-name: example1;
+    animation-iteration-count: infinite;  
+    animation-duration: 1s;
+}
+ .part9 {
+    width: 1px;
+    height: 30px;
+    
+    left: 160px;
+    background-color: #ece9d6;
+    border-radius: 100%;
+    position: relative;  
+    animation-name: example;
+    animation-iteration-count: infinite;  
+    animation-duration: 1s;
+}
+ .part10 {
+    width: 1px;
+    height: 30px;    
+   
+    background-color: #ece9d6;
+   
+    left: 180px;
+    border-radius: 100%;
+    position: relative;  
+    animation-name: example1;
+    animation-iteration-count: infinite;  
+    animation-duration: 1s;
+}
+@keyframes example{
+    0%{top: 0px; }
+    10%{top:400px} 
+    20%{top:0px} 
+    30%{top:400px} 
+    40%{top:0px} 
+    50%{top:400px} 
+    60%{top:0px} 
+    70%{top:400px} 
+    80%{top:0px} 
+    90%{top:400px} 
+    100%{top: 0px;}    
+}
+@keyframes example1{
+    0%{top: 400px; }
+    10%{top:0px} 
+    20%{top:400px} 
+    30%{top:0px} 
+    40%{top:400px} 
+    50%{top:0px} 
+    60%{top:400px} 
+    70%{top:0px} 
+    80%{top:400px} 
+    90%{top:0px} 
+    100%{top:400px;}    
+}
