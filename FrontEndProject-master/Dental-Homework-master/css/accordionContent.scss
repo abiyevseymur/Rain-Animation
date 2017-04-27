@@ -1,0 +1,103 @@
+$goy:#18afd3;
+$sari:#f57e57;
+$boz:#F1F3F9;
+$darkgray:#7a7a7a;
+@mixin tittle {
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+}
+
+@mixin border {
+    width: 8%;
+    position: absolute;
+    bottom: -30px;
+    left: 46%;
+    border-bottom: 3px solid $sari;
+    content: '';
+}
+
+@mixin btn {
+    background: $sari;
+    border-radius: 20px;
+    color: white;
+    margin-top: 50px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-weight: bold;
+    transition: 0.3s ease-out;
+    &:hover {
+        background: $goy;
+    }
+}
+
+@mixin hr {
+    text-transform: uppercase;
+    .textLine {
+        position: relative;
+        height: 1px;
+        padding: 0;
+        margin-bottom: 22px;
+        border: none;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 4px;
+            width: 80px;
+            background: $goy;
+        }
+    }
+}
+
+// MY SASS
+.content {
+    padding: 100px 0px;
+    .list {
+        .title {
+            text-transform: uppercase;
+            .textLine {
+                position: relative;
+                height: 1px;
+                padding: 0;
+                margin-bottom: 22px;
+                border: none;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 4px;
+                    width: 80px;
+                    background: $goy;
+                }
+            }
+        }
+    }
+    .bars {
+        .tabs {
+            position: relative;
+            height: 1px;
+            padding: 0;
+            background: #e5e5e5;
+            margin-bottom: 22px;
+            border: none;
+            li {
+                display: inline;
+            }
+            .active {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 1px;
+                width: 50px;
+                background: $sari;
+            }
+        }
+    }
+}

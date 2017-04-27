@@ -1,0 +1,45 @@
+.a {
+    background: #009688;
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.list {
+    margin-top: 25px;
+}
+
+.list .active {
+    border: 2px solid #3F51B5;
+    position: relative;
+}
+
+.list .active::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: -19%;
+    left: 40%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #3F51B5;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.b {
+    background: #ccc;
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+
+.main .active {
+    width: 150px;
+}

@@ -1,0 +1,198 @@
+html,
+body {
+    margin: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.boxed {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.btn {
+    color: white;
+    padding: 15px;
+    border: none;
+    background-color: #45aed6;
+    border-bottom: 2px solid #2a95be;
+}
+
+.header .logo img {
+    margin: 20px 0px;
+}
+
+.header .menu ul {
+    list-style-type: none;
+    margin: 35px 0px
+}
+
+.header .menu ul li {
+    display: inline;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    color: #5a5858;
+    font-size: 18px;
+    padding: 31px 15px;
+}
+
+.header .menu ul li a.active {
+    border-top: 3px solid #2fa3be;
+}
+
+.header .menu ul li a:hover {
+    border-top: 3px solid #2fa3be;
+}
+
+.slider {
+    background-image: url('../img/bg1.jpg');
+    background-size: 100% 100%;
+    height: 550px;
+}
+
+.slider .text {
+    width: 500px;
+    padding-top: 125px;
+    color: white;
+}
+
+.slider .text h1 span {
+    color: #2fa3be;
+}
+
+.quality {
+    background-color: #eeeeee;
+    padding: 50px 0px;
+}
+
+.quality .text {
+    width: 900px;
+}
+
+.quality .text h3 {
+    font-size: 25px;
+}
+
+.quality .download_now {
+    margin-top: 75px;
+}
+
+.quality .download_now button {
+    padding: 15px 25px;
+}
+
+.features {
+    padding: 75px 0px;
+}
+
+.features .head {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features .text {
+    margin-top: 40px;
+}
+
+.features .text .intro_photo {
+    width: 50%;
+}
+
+.features .text .list {
+    width: 50%;
+}
+
+.features .text .item .icon {
+    width: 25%;
+    text-align: center;
+}
+
+.features .text .list ul {
+    list-style-type: none;
+    margin-top: 65px;
+}
+
+.features .text .item .title {
+    width: 75%;
+}
+
+.features .text .item .icon i {
+    color: #45aed6;
+    font-size: 25px;
+    padding: 25px;
+    border: 1px solid #8f8c8c;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.features .text .item:hover .icon i {
+    color: white;
+    background-color: #45aed6;
+}
+
+.creative {
+    background-image: url('../img/cta2-bg.jpg');
+    background-size: cover;
+}
+
+.creative .inner {
+    text-align: center;
+    color: white;
+}
+
+.creative .inner h1 {
+    padding-top: 60px;
+    font-size: 30px;
+}
+
+.creative .inner p {
+    font-size: 20px;
+}
+
+.service {
+    padding: 75px;
+}
+
+.service .head {
+    text-align: center;
+}
+
+.service .item .icon {
+    width: 12%;
+}
+
+.service .item .icon i {
+    font-size: 25px;
+    padding: 25px;
+    border-radius: 100%;
+    border: 1px solid #8f8c8c;
+    color: #45aed6;
+    margin-top: 20px;
+}
+
+.service .item .title {
+    width: 77%;
+}
+
+.service .item {
+    width: 32.3%;
+    margin-left: 1%;
+}
+
+.service .item:hover .icon i {
+    color: white;
+    background-color: #45aed6;
+}

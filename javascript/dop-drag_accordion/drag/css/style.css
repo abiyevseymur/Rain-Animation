@@ -1,0 +1,18 @@
+.main {
+    width: 200px;
+    height: auto;
+    border: 1px solid black;
+}
+
+ul li {
+    font-size: 25px;
+    list-style: none;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 5px;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}

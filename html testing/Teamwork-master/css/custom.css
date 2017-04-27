@@ -1,0 +1,183 @@
+.years {
+    background: #009cde;
+    height: 500px;
+}
+
+
+.boxed {
+      width:1170px;
+    margin: 0 auto;
+}
+
+.years .boxed .text {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 20px;
+}
+
+.years .boxed .text ul {
+    list-style-type: none;
+}
+
+.years .boxed .text ul li {
+    display: inline-block;
+}
+
+.appoint .item {
+    border: 1px solid silver;
+    text-align: center;
+}
+
+.appoint .text {
+    text-align: center;
+    padding: 30px;
+}
+.appoint .text h1{
+    color: #009cde;
+}
+
+
+.appoint .text1 input {
+    padding: 12px;
+    width: 25%;
+    margin-top: 30px;
+}
+
+.appoint .item {
+    padding: 5px;
+}
+
+.item input {
+    padding: 12px;
+    width: 55%;
+    margin-top: 30px;
+}
+
+.appoint .item select {
+    width: 60%;
+    padding: 12px;
+    margin-top: 30px;
+    color: gray;
+}
+
+.appoint .item a {
+    border: 1px solid silver;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: white;
+    background: #009cde;
+}
+.appoint .item a:hover{
+    background: white;
+    color: #009cde;
+    border: 1px solid #009cde;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.appoint .item p {
+    margin: 40px 0 30px 0;
+}
+
+.row1 {
+    margin-top: 100px;
+    background: #333;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+.row1:hover {
+    background: #009cde;
+    transition: all 0.3s ease-in-out;
+}
+
+.main1 .photos .flex {
+    flex-direction: row;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.margin-top {
+    margin-top: 50px;
+}
+
+.main1 .photos .flex .flex-item {
+    width: 25%;
+    height: 195px;   
+    position: relative;
+}
+.main1 .photos .boxed .text{
+    text-align: center;
+    padding: 50px 0;
+} 
+.main1 .photos .boxed .text h1{
+    color: #009cde;
+}
+.blackline {
+    background-image: url(../img/testimonal-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.blackline .text {
+    padding: 100px;
+    color: white;
+    text-align: center;
+}
+.blackline .text span{
+    color: #009cde;
+}
+
+.blog {
+    text-align: center;
+    padding: 50px 0;
+    
+}
+.blog h1 {
+    color: #009cde;
+}
+
+.blog .bio{
+    height: 400px;
+    text-align: left;
+    
+}
+.margin-left{
+    margin: 30px;    
+}
+.blog .bio img{
+    width: 100%;
+    
+}
+.blog .bio a{
+    color: #009cde;
+    border:1px solid #009cde;
+    padding: 5px 10px;
+    text-decoration: none;   
+}
+.blog .bio a:hover{
+    color: white;
+    border:1px solid #009cde;
+    background: #009cde;
+    transition: all 0.3s ease-in-out;
+    
+}
+.blog,.darkline,.appoint p{
+    color: darkgray;
+}
+.contact {    
+    text-align: center;
+    background: #f9f7f9;
+    margin-top: 80px;
+    padding: 100px;
+}
+.contact h1{
+    color: #009cde;
+}
+.contact img{
+    margin-top: 80px;
+}

@@ -1,0 +1,48 @@
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+.pull-left{
+    float:left;
+
+}
+.pull-right{
+    float:right;
+}
+.clearfix {
+    clear:both;
+}
+.main .menu ul{
+    list-style-type: none;
+    padding: 35px 0;
+}
+.menu ul li{
+    display: inline;
+    margin-right: 40px;      
+}
+.lang {
+    padding: 35px 0;
+    margin: 16px 0;
+    margin-left: 100px;  
+}
+.content .category .menu-right ul{
+        list-style-type: none; 
+              
+}
+.content .category .menu-right {
+    margin-right: 80px;
+}
+.content .category .menu-right ul li{
+    padding-top:10px;
+    padding-right:80px;
+    padding-left:15px;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    background: silver;    
+}
+.category .photo{
+    background-image: url("../img/building.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    width: 900px;
+}

@@ -1,0 +1,142 @@
+html,
+body {
+    margin: 0px;
+}
+
+.main {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.btn {
+    background-color: #14be99;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header {
+    margin: 15px;
+}
+
+.header .logo img {
+    width: 150px;
+}
+
+.header .menu ul {
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.header .menu ul li {
+    display: inline;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.header .menu ul li a:hover {
+    background: #14be99;
+    color: white;
+}
+
+.content .intro {
+    text-align: center;
+    background-image: url('../img/bg_intro.jpg');
+    background-size: cover;
+    color: #3f4d4a;
+}
+
+.content .intro .text {
+    width: 700px;
+    margin: 0 auto;
+    padding: 70px 0px 120px 0px;
+}
+
+.content .intro h1 {
+    font-weight: normal;
+    font-size: 42px;
+}
+
+.content .intro h1 span {
+    font-weight: bold;
+}
+
+.content .intro p {
+    font-size: 20px;
+}
+
+.content .intro button {
+    margin-top: 20px;
+}
+
+.portfolio .head {
+    text-align: center;
+}
+
+.portfolio .head .filter {
+    margin: 40px 0;
+}
+
+.portfolio .head .filter li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.portfolio .list {
+    margin: 0 90px;
+   
+}
+
+.portfolio .list .item {
+    float: left;
+    width: 150px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: 90px 30px;
+    background: #50b492;
+    border-radius: 100%;
+}
+
+.about_us {
+    background: #16a086;
+    color: white;
+    padding: 15px 70px;
+}
+
+.about_us .head {
+    text-align: center;
+}
+
+.about_us .list .person {
+    width: 250px;
+    display: inline-block;
+}
+
+.about_us .list .person.has_margin {
+    margin: 0px 125px;
+}
+
+.about_us .list .person .title {
+    background: white;
+    color: black;
+    padding: 15px;
+}

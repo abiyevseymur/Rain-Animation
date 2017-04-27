@@ -1,0 +1,147 @@
+html,
+body {
+    margin: 0;
+}
+
+.boxed {
+    /*width: 1170px;*/
+    margin: 0 auto;
+}
+
+.row {
+    display: block;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+[class*='col_'] {
+    float: left;
+}
+
+.col_1 {
+    width: 8.3333%;
+}
+
+.col_offset_1 {
+    margin-left: 8.3333%;
+}
+
+.col_2 {
+    width: 16.667%;
+}
+
+.col_offset_2 {
+    margin-left: 16.667%;
+}
+
+.col_3 {
+    width: 25%;
+}
+
+.col_offset_3 {
+    margin-left: 25%;
+}
+
+.col_4 {
+    width: 33.3333%;
+}
+
+.col_offset_4 {
+    margin-left: 33.3333%;
+}
+
+.col_5 {
+    width: 41.6667%;
+}
+
+.col_offset_5 {
+    margin-left: 41.6667%;
+}
+
+.col_6 {
+    width: 50%;
+}
+
+.col_offset_6 {
+    margin-left: 50%;
+}
+
+.col_7 {
+    width: 58.3333%;
+}
+
+.col_offset_7 {
+    margin-left: 58.3333%;
+}
+
+.col_8 {
+    width: 66.6667%;
+}
+
+.col_offset_8 {
+    margin-left: 66.6667%;
+}
+
+.col_9 {
+    width: 75%;
+}
+
+.col_offset_9 {
+    margin-left: 75%;
+}
+
+.col_10 {
+    width: 83.3333%;
+}
+
+.col_11 {
+    width: 91.6667%;
+}
+
+.col_12 {
+    width: 100%;
+}
+
+.element1 {
+    height: 150px;
+    background: #ccc;
+}
+
+.element2 {
+    height: 150px;
+    background: #745154;
+}
+
+@media screen and (min-width: 1100px) {
+    .col_3 {
+        width: 33.3333%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .col_3 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .col_3 {
+        width: 100%;
+    }
+}

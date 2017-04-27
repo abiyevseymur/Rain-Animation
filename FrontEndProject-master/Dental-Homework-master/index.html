@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FrontEndDental</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sass.css">
+    <script src="https://use.fontawesome.com/31850eae9f.js"></script>
+</head>
+
+<body>
+    <!--menu line and span-->
+    <span id="menuIcon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+    <span id="scrollUp"><i class="fa fa-angle-double-up" aria-hidden="true"></i></span>
+    <!--<i class="fa fa-times" aria-hidden="true"></i>-->
+    <div class="menuLine">
+        <ul id='menuName'>
+            <input id='search' type="text" placeholder="Search"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="buttons.html">buttons</a>
+            </li>
+            <li>
+                <a href="grid.html">grid</a>
+            </li>
+            <li>
+                <a href="Typography.html">Typography</a>
+            </li>
+            <li>
+                <a href="forms.html">forms</a>
+            </li>
+            <li>
+                <a href="accordion.html">accordion</a>
+            </li>
+            <li>
+                <a href="#">gallery</a>
+            </li>
+            <li>
+                <a href="#">blog</a>
+            </li>
+            <li>
+                <a href="#">contact</a>
+            </li>
+            <li>
+                <a href="#">TIMETABLE</a>
+            </li>
+        </ul>
+    </div>
+    <!--menu line and span-->
+    <div class="main">
+        <div class="header">
+            <div class="headBackImg">
+                <div class="headlayot">
+                    <div class="container ">
+                        <div class="row head hidden-sm hidden-xs">
+                            <div class="col-md-3">
+                                <img src="img/logo.png">
+                            </div>
+                            <div class="col-md-offset-3 col-md-3 number">
+                                <i class="fa fa-phone pull-left" aria-hidden="true"></i>
+                                <li><a href="#">1-800-1234-567</a></li>
+                                <li><a href="#">1-800-3214-654</a></li>
+                            </div>
+                            <div class="col-md-3 location">
+                                <i class="fa fa-map-marker pull-left" aria-hidden="true"></i>
+                                <a href="#">2130 Fulton Street San Diego CA 94117-1080 USA</a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="row homeHead">
+                            <div class="col-md-9 col-xs-12">
+                                <h1>HIGH QUALITY MEDICAL CARE THAT'S FAST AND CONVENIENT</h1>
+                                <p>Our entire team is dedicated to providing you with the highest standard of quality dental care services that are tailored to meet the specific needs of every member of your family.</p>
+                                <div class="btn btn-default">Make An Appointment</div>
+                            </div>
+                            <div class="col-md-3 col-xs-12">
+                                <form class='form'>
+                                    <div class="form-group">
+                                        <label for="exampleInputName1">Name</label>
+                                        <input type="name" class="form-control" id="exampleInputName1" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
+                                    <select class="selectpicker message">
+                                <option>Doctor</option>
+                                <option>Nurse</option>
+                            </select>
+                                    <button type="submit" class="btn btn-default">Book Cunsulation</button>
+                                </form>
+                            </div>
+                            <div class="dotes">
+                                <ul>
+                                    <li class="dotHead active"></li>
+                                    <li class="dotHead"></li>
+                                    <li class="dotHead"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="container">
+            <div class="row schedule">
+                <div class="col-md-6 col-xl-3 col-xs-12 card">
+                    <div class="vertical">
+                        <h1>OPENING HOURS</h1>
+                    </div>
+                    <div class="tableContent">
+                        <div class="cardContent">
+                            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                            <h5> Mon–Fri &nbsp; &nbsp; &nbsp;8:00am–7:00pm<br> Saturday &nbsp; &nbsp; &nbsp; 9:00am–5:00pm<br> Sunday &nbsp; &nbsp; &nbsp; 9:00am–3:00pm </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3  col-xs-12 card">
+                    <div class="vertical">
+                        <h1>DOCTORS’ TIMETABLE</h1>
+                    </div>
+                    <div class="tableContent">
+                        <div class="cardContent">
+                            <i class="fa fa-calendar-times-o" aria-hidden="true"></i>
+                            <p>The timetable is for guidance only to help you plan your appointment with a preferred doctor or nurse. It does not guarantee availability as our doctors or nurses may sometimes be attending to other duties.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 col-xs-12 card">
+                    <div class="vertical">
+                        <h1>APPOINTMENTS</h1>
+                    </div>
+                    <div class="tableContent">
+                        <div class="cardContent">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>The first step towards a healthy life is to schedule an appointment. Please contact our office by phone or complete the appointment request form.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 col-xs-12 card">
+                    <div class="vertical">
+                        <h1>EMERGENCY CASES</h1>
+                    </div>
+                    <div class="tableContent">
+                        <div class="cardContent">
+                            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                            <p><strong> 1-800-1234-567</strong> <br> Call us!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="mediaX">
+            <div class="container">
+                <div class="row mediaTitle">
+                    <h1>WHY CHOOSE DENTA-C?</h1>
+                    <div class="choose ">
+                        <div class="media  pull-left">
+                            <img class="pull-left d-flex align-self-center mr-3" src="img/icon-pills.png">
+                            <div class="media-body">
+                                <h3 class="mt-0">Easy Booking</h3>
+                                <p>Booking an appointment at our dental clinic is as easy as doing 2 clicks!</p>
+                            </div>
+                        </div>
+                        <div class="media pull-left">
+                            <img class="pull-left d-flex align-self-center mr-3" src="img/icon-doctor.png">
+                            <div class="media-body">
+                                <h3 class="mt-0">Experience</h3>
+                                <p>Combined, our 5 dentists have over half a century of practical experience. They are ready to put it to action for you!</p>
+                            </div>
+                        </div>
+                        <div class="media pull-left">
+                            <img class="pull-left d-flex align-self-center mr-3" src="img/icon-medicalcar.png">
+                            <div class="media-body">
+                                <h3 class="mt-0">Best Price Guarantee</h3>
+                                <p>Our reasonable prices made thousands of people smile with a new, beautiful smile, as never before!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="services">
+            <div class="container">
+                <div class="row servicesTitle">
+                    <h1>Our Services</h1>
+                    <p>We provide high-quality health care services for the whole family.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="serviceImg">
+                        <img src="img/service1.jpg">
+                        <div class="imgLine"><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> General Care</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serviceImg">
+                        <img src="img/service2.jpg">
+                        <div class="imgLine"><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> Cosmetic Dentistry</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serviceImg">
+                        <img src="img/service3.jpg">
+                        <div class="imgLine"><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> Restorative Dentistry</a></div>
+                    </div>
+                </div>
+                <div class="btn btn-default viewBtn">View ALL services</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="consultation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="consultImg">
+                            <div class="consultContent">
+                                <h1>QUALITY SERVICES & BEST PRICES</h1>
+                                <p>Denta-C provides a vast range of dental care services for our patients. You can find the full list of services or order a free consultation if you are interested in general dental care.
+                                </p>
+                                <div class="btn btn-default viewBtn">FREE Consultation</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="consultTestimonials">
+                            <div class="consult">
+                                <div class="tittleT">
+                                    <h1>Testimonials</h1>
+                                </div>
+                                <div class="moveTestimonials">
+                                    <div class="testimonials">
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                        <p id='cursive'>I urgently required dental help on July, 4. And despite all other clinics being closed, Denta-C took my appointment!</p>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user1.jpg">
+                                            <div class="media-body">
+                                                <h3 class="mt-0">Herbert Wallace</h3>
+                                                <p>Patient</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials">
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                        <p id='cursive'>
+                                            Comparing teeth whitening prices here and elsewhere, I picked Denta-C. The result was beyond my expectations!</p>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user2.jpg">
+                                            <div class="media-body">
+                                                <h3 class="mt-0">Gary Growles</h3>
+                                                <p>Patient</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials">
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                        <p id='cursive'>
+                                            The result was beyond my expectations! Gary Growles Patient Taking my kids to a dentist has never been easier. They just loved the welcoming and warm atmosphere in there!</p>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user3.jpg">
+                                            <div class="media-body">
+                                                <h3 class="mt-0">Daniela Smith</h3>
+                                                <p>Patient</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dotes">
+                                    <ul>
+                                        <li class="dot active"></li>
+                                        <li class="dot"></li>
+                                        <li class="dot"></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="ourTeam">
+            <h1>Our Team</h1>
+            <div class="team">
+                <div class="teamMove">
+                    <div class="mediaPerson">
+                        <div class="media" style="margin-left: 20px;">
+                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user4.jpg">
+                            <div class="media-body">
+                                <h3 class="mt-0">Scott Riley</h3>
+                                <p>Chief Medical Officer</p>
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>1-800-1234-567</a>
+                            </div>
+                            <p id='mediaInfo'>Our clinic's Chief Dental Officer, Dr. Scott Riley has been working in this field of medical specialization since 2002.</p>
+                        </div>
+                    </div>
+                    <div class="mediaPerson">
+                        <div class="media ">
+                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user5.jpg">
+                            <div class="media-body">
+                                <h3 class="mt-0">Scott Riley</h3>
+                                <p>Chief Medical Officer</p>
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>1-800-1234-567</a>
+                            </div>
+                            <p id='mediaInfo'>Our clinic's Chief Dental Officer, Dr. Scott Riley has been working in this field of medical specialization since 2002.</p>
+                        </div>
+                    </div>
+                    <div class="mediaPerson">
+                        <div class="media ">
+                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user6.jpg">
+                            <div class="media-body">
+                                <h3 class="mt-0">Scott Riley</h3>
+                                <p>Chief Medical Officer</p>
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>1-800-1234-567</a>
+                            </div>
+                            <p id='mediaInfo'>Our clinic's Chief Dental Officer, Dr. Scott Riley has been working in this field of medical specialization since 2002.</p>
+                        </div>
+                    </div>
+                    <div class="mediaPerson">
+                        <div class="media ">
+                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user4.jpg">
+                            <div class="media-body">
+                                <h3 class="mt-0">Scott Riley</h3>
+                                <p>Chief Medical Officer</p>
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>1-800-1234-567</a>
+                            </div>
+                            <p id='mediaInfo'>Our clinic's Chief Dental Officer, Dr. Scott Riley has been working in this field of medical specialization since 2002.</p>
+                        </div>
+                    </div>
+                    <div class="mediaPerson">
+                        <div class="media ">
+                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user5.jpg">
+                            <div class="media-body">
+                                <h3 class="mt-0">Leslie Gross</h3>
+                                <p>Dental Hygienist</p>
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>1-800-1234-567</a>
+                            </div>
+                            <p id='mediaInfo'>Leslie is one of the most experienced dental hygienists in the country. She works at our dental clinic since day 1.</p>
+                        </div>
+                    </div>
+                    <div class="mediaPerson">
+                        <div class="media">
+                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user6.jpg">
+                            <div class="media-body">
+                                <h3 class="mt-0">Dana Sims</h3>
+                                <p>Practical Nurse</p>
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>1-800-1234-567</a>
+                            </div>
+                            <p id='mediaInfo'>Dana previously served as a senior practical nurse at the Mayo clinic. She obtained her license by working hard after graduating from a medical college.</p>
+                        </div>
+                    </div>
+                    <div class="mediaPerson">
+                        <div class="media ">
+                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user4.jpg">
+                            <div class="media-body">
+                                <h3 class="mt-0">Scott Riley</h3>
+                                <p>Chief Medical Officer</p>
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>1-800-1234-567</a>
+                            </div>
+                            <p id='mediaInfo'>Our clinic's Chief Dental Officer, Dr. Scott Riley has been working in this field of medical specialization since 2002.</p>
+                        </div>
+                    </div>
+                    <div class="mediaPerson">
+                        <div class="media ">
+                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user5.jpg">
+                            <div class="media-body">
+                                <h3 class="mt-0">Leslie Gross</h3>
+                                <p>Dental Hygienist</p>
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>1-800-1234-567</a>
+                            </div>
+                            <p id='mediaInfo'>Leslie is one of the most experienced dental hygienists in the country. She works at our dental clinic since day 1.</p>
+                        </div>
+                    </div>
+                    <div class="mediaPerson">
+                        <div class="media">
+                            <img class="d-flex align-self-center mr-3 pull-left" src="img/user6.jpg">
+                            <div class="media-body">
+                                <h3 class="mt-0">Dana Sims</h3>
+                                <p>Practical Nurse</p>
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>1-800-1234-567</a>
+                            </div>
+                            <p id='mediaInfo'>Dana previously served as a senior practical nurse at the Mayo clinic. She obtained her license by working hard after graduating from a medical college.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <ul class="dotesMedia">
+                        <li class="dotMedia active"></li>
+                        <li class="dotMedia"></li>
+                        <li class="dotMedia"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="features">
+        <h1>FEATURED DENTAL NEWS</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="img/item1.jpg" alt="">
+                        <h3>First signs of Gum Disease</h3>
+                        <h6>June 21, 2016 at 8:12pm <span>Dental</span></h6>
+                        <p>Gums disease is preceded by few very distinct symptoms. One of these is when you spit out blood after brushing your teeth...</p>
+                        <div class="btn btn-default ownBtn">Dental</div>
+                        <div class="btn btn-default ownBtn">Gum</div>
+                        <div class="btn btn-default ownBtn">Disease</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="img/item2.jpg" alt="">
+                        <h3>Basic Dental Care</h3>
+                        <h6>June 21, 2016 at 8:12pm <span>Dental</span></h6>
+                        <p>Americans oftentimes ignore some basic, daily routines of oral hygiene, that need to be upheld. Practicing healthy habits...</p>
+                        <div class="btn btn-default ownBtn">Dental</div>
+                        <div class="btn btn-default ownBtn">Gum</div>
+                        <div class="btn btn-default ownBtn">Disease</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="img/item3.jpg" alt="">
+                        <h3>Avoiding Bad Breath</h3>
+                        <h6>June 21, 2016 at 8:12pm <span>Dental</span></h6>
+                        <p>Bad breath is a deal breaker both in business and in personal life of ours. And while breath fresheners or candies hide it, they do not cure the very problem at hand...</p>
+                        <div class="btn btn-default ownBtn">Dental</div>
+                        <div class="btn btn-default ownBtn">Gum</div>
+                        <div class="btn btn-default ownBtn">Disease</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <img src="img/item4.jpg" alt="">
+                        <h3>Dry Mouth</h3>
+                        <h6>June 21, 2016 at 8:12pm <span>Dental</span></h6>
+                        <p>With the pace of modern life keeping us busy all the time and the environment conditions in big cities worsening day to day, our oral hygiene is at risk. The dry mouth syndrome... DentalCareDry VIEW ALL BLOG POSTS
+                        </p>
+                        <div class="btn btn-default ownBtn">Dental</div>
+                        <div class="btn btn-default ownBtn">Gum</div>
+                        <div class="btn btn-default ownBtn">Disease</div>
+                    </div>
+                </div>
+                <div class="btn btn-default viewBtn">FREE Consultation</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="help">
+        <div class="BackImg">
+            <img class='hidden-xs' src="img/background-01.jpg">
+        </div>
+        <div class="layot">
+            <h1>HOW WE CAN HELP</h1>
+            <p>We offer a wide range of procedures to help you get the perfect smile</p>
+            <div class="btn btn-default viewBtn">Book An appointment</div>
+        </div>
+    </div>
+    <div class="googleMap">
+        <div id="map"></div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="icon">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="iconX">
+                            <div id='fa-fa'><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div id='fa-info'><a href="#">1-800-1234-567</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="iconX">
+                            <div id='fa-fa'><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div id='fa-info'><a href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="iconX">
+                            <div id='fa-fa'><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                            <div id='fa-info'><a href="#">info@demolink.org</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="bottom">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/logo.png">
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <p>© 2017 All Rights Reserved Terms of Use and <a>Privacy Policy</a></p>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="social">
+                                <ul>
+                                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-rss" aria-hidden="true"></i></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function initMap() {
+        var myLatLng = {
+            lat: -25.363,
+            lng: 131.044
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 5,
+            center: myLatLng,
+            scrollwheel: false
+        });
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbLrBcC8ubhGjV0NBSUiBuT_HaDsHdoLQ&callback=initMap">
+</script>
+<script src="js/script.js"></script>
+<script src="js/object.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+
+</html>

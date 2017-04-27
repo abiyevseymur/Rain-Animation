@@ -1,0 +1,102 @@
+html,
+body {
+    margin: 0;
+}
+
+.main {
+    width: 1170px;    
+}
+.boxed {
+    margin: 0 auto;
+}
+
+.clearfix {
+    clear: both;
+}
+[class*='col'] {
+    float: left;
+}
+
+.col1 {
+    width: 8.3333%;
+}
+
+.coloffset1 {
+    margin-left: 8.3333%;
+}
+
+.col2 {
+    width: 16.667%;
+}
+
+.coloffset2 {
+    margin-left: 16.667%;
+}
+
+.col3 {
+    width: 25%;
+}
+
+.coloffset3 {
+    margin-left: 25%;
+}
+
+.col4 {
+    width: 33.3333%;
+}
+
+.coloffset4 {
+    margin-left: 33.3333%;
+}
+
+.col5 {
+    width: 41.6667%;
+}
+
+.coloffset5 {
+    margin-left: 41.6667%;
+}
+
+.col6 {
+    width: 50%;
+}
+
+.coloffset6 {
+    margin-left: 50%;
+}
+
+.col7 {
+    width: 58.3333%;
+}
+
+.coloffset7 {
+    margin-left: 58.3333%;
+}
+
+.col8 {
+    width: 66.6667%;
+}
+
+.coloffset8 {
+    margin-left: 66.6667%;
+}
+
+.col9 {
+    width: 75%;
+}
+
+.coloffset9 {
+    margin-left: 75%;
+}
+
+.col10 {
+    width: 83.3333%;
+}
+
+.col11 {
+    width: 91.6667%;
+}
+
+.col12 {
+    width: 100%;
+}

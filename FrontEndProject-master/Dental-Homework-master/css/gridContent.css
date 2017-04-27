@@ -1,0 +1,25 @@
+.content {
+  padding: 100px; }
+  .content .list {
+    margin: 20px 5px;
+    background: #ccc;
+    padding: 20px; }
+  .content .title {
+    text-transform: uppercase; }
+    .content .title .textLine {
+      position: relative;
+      height: 1px;
+      padding: 0;
+      background: #e5e5e5;
+      margin-bottom: 22px;
+      border: none; }
+      .content .title .textLine:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 50px;
+        background: #f57e57; }
+
+/*# sourceMappingURL=gridContent.css.map */

@@ -1,0 +1,788 @@
+$goy:#18afd3;
+$sari:#f57e57;
+$boz:#F1F3F9;
+$darkgray:#7a7a7a;
+@mixin tittle {
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+}
+
+@mixin border {
+    width: 8%;
+    position: absolute;
+    bottom: -30px;
+    left: 46%;
+    border-bottom: 3px solid $sari;
+    content: '';
+}
+
+@mixin btn {
+    background: $sari;
+    border-radius: 20px;
+    color: white;
+    margin-top: 50px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-weight: bold;
+    transition: 0.3s ease-out;
+    &:hover {
+        background: $goy;
+    }
+}
+
+// MY SASS 
+//menu and Icon Line
+#menuIcon {
+    color: $goy;
+    padding: 15px 20px;
+    z-index: 10;
+    font-size: 18px;
+    position: fixed;
+    background: white;
+    border-radius: 100%;
+    margin: 5% 15px;
+    box-shadow: 0 2px 5px #ccc;
+    transition: 0.3s all;
+    left: 0;
+    &:hover {
+        color: white;
+        background: $goy;
+        cursor: pointer;
+    }
+}
+
+#scrollUp {
+    color: $goy;
+    padding: 14px 20px;
+    z-index: 10;
+    font-size: 18px;
+    position: fixed;
+    background: white;
+    border-radius: 100%;
+    margin: 1% 15px;
+    box-shadow: 0 2px 5px #ccc;
+    transition: 0.3s all;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    &:hover {
+        color: white;
+        background: $goy;
+        cursor: pointer;
+    }
+}
+
+.menuLine {
+    background: white;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    z-index: 9;
+    left: -25%;
+    display: none;
+    transition: 0.3s all;
+    #menuName {
+        line-height: 40px;
+        list-style-type: none;
+        font-weight: 500;
+        padding: 20% 15%;
+        #search {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        i {
+            color: $sari;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        a {
+            color: $sari;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: 0.3s all;
+            &:hover {
+                color: #d55830;
+            }
+        }
+    }
+}
+
+//
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    a {
+        padding: 0;
+        margin: 0;
+        color: black;
+        text-decoration: none;
+        &:hover {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+
+.main {
+    z-index: 5;
+    background: white;
+}
+
+.header {
+    position: relative;
+    height: 600px;
+    .headBackImg {
+        background: url('../img/head1.jpg') no-repeat;
+        background-size: cover;
+        height: 100%;
+        transition: 0.3s all;
+    }
+    .headlayot {
+        position: absolute;
+        top: 0;
+        min-width: 100%;
+        background: rgba(14, 99, 119, 0.3);
+        z-index: 2;
+        min-height: 100%;
+        .head {
+            margin-top: 20px;
+            i {
+                border-radius: 100%;
+                background: $goy;
+                color: white;
+                padding: 10px 14px;
+                font-size: 24px;
+            }
+            .number,
+            .location {
+                font-size: 16px;
+                color: white;
+                a {
+                    margin-left: 15px;
+                    text-decoration: none;
+                    color: white;
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+        img {
+            max-width: 100%;
+            cursor: pointer;
+        }
+    }
+    .homeHead {
+        color: white;
+        font-size: 24px;
+        padding: 5% 0;
+        .dotes {
+            position: absolute;
+            bottom: 0%;
+            left: 10%;
+            .dotHead {
+                height: 15px;
+                width: 15px;
+                background: lightgray;
+                border-radius: 100%;
+                display: inline-block;
+                margin: 20px 10px;
+                cursor: pointer;
+                &:hover {
+                    background: $goy;
+                }
+            }
+            .active {
+                width: 17px;
+                height: 17px;
+                background: $goy;
+            }
+        }
+        h1 {
+            font-size: 36px;
+            padding: 5% 0;
+        }
+        .btn {
+            background: $sari;
+            border-radius: 20px;
+            color: white;
+            margin: 3% 0;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: 0.3s ease-out;
+            &:hover {
+                background: $goy;
+            }
+        }
+    }
+    .form {
+        border-radius: 10px;
+        padding: 20px 30px;
+        font-size: 16px;
+        background: rgba(33, 33, 33, 0.4);
+        input {
+            height: 50px;
+        }
+        .message {
+            color: black;
+            height: 50px;
+            width: 100%;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+    }
+}
+
+.schedule {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card {
+        .vertical {
+            float: left;
+            width: 50px;
+            min-height: 240px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            background: $goy;
+            h1 {
+                transform: rotate(-90deg);
+                position: absolute;
+                bottom: 35%;
+                display: block;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                will-change: content;
+                white-space: nowrap;
+            }
+        }
+        .tableContent {
+            float: left;
+            min-height: 240px;
+            width: 70%;
+            background: $boz;
+            margin-top: 40px;
+            .cardContent {
+                padding: 10%;
+                i {
+                    color: $sari;
+                    font-size: 30px;
+                }
+                h5 {
+                    margin-top: 20px;
+                    line-height: 33px;
+                    color: black;
+                }
+                p {
+                    strong {
+                        font-size: 28px;
+                        line-height: 60px;
+                    }
+                    margin-top: 20px;
+                    color: black;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.mediaX {
+    margin: 80px auto;
+    .mediaTitle {
+        h1 {
+            text-align: center;
+            color: black;
+            margin-top: 50px;
+            text-decoration: none;
+            position: relative;
+            &:before {
+                width: 8%;
+                position: absolute;
+                bottom: -30px;
+                left: 45%;
+                border-bottom: 3px solid $sari;
+                content: '';
+            }
+        }
+        .choose {
+            margin-top: 70px;
+            .media {
+                margin: 0;
+                img {
+                    background: $sari;
+                    border-radius: 100%;
+                    padding: 20px 25px;
+                }
+                .media-body {
+                    padding-left: 20px;
+                    max-width: 300px;
+                    h3 {
+                        margin: 0;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        color: #868686;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.services {
+    background: $boz;
+    h1 {
+        @include tittle;
+        &::before {
+            @include border()
+        }
+    }
+    p {
+        color: #868686;
+        margin: 70px auto;
+        text-align: center;
+    }
+    .serviceImg {
+        img {
+            border-radius: 5px;
+        }
+        .imgLine {
+            background: $goy;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 10px;
+            right: 0px;
+            border-radius: 5px;
+            transition: 0.3s ease-out;
+            &:hover {
+                background: $sari;
+                transform: translateX(15px);
+            }
+            a {
+                color: white;
+                text-align: center;
+                line-height: 40px;
+                font-weight: bold;
+                padding: 0 15px;
+                i {
+                    display: none;
+                }
+            }
+        }
+    }
+    .btn {
+        @include btn;
+        font-size: 18px;
+        margin-left: 40%;
+        margin-bottom: 5%;
+    }
+}
+
+.consultation {
+    .consultImg {
+        background: url('../img/background-05.jpg') no-repeat;
+        background-size: cover;
+        .consultContent {
+            padding: 20%;
+            color: white;
+            h1 {
+                line-height: 50px;
+                font-size: 38px;
+                margin-bottom: 30px;
+            }
+            p {
+                line-height: 30px;
+            }
+            .viewBtn {
+                @include btn;
+            }
+        }
+    }
+    .consultTestimonials {
+        width: 500px;
+        overflow: hidden;
+        .consult {
+            position: relative;
+            margin: 50px;
+            margin-bottom: 0;
+            .tittleT {
+                h1 {
+                    line-height: 50px;
+                    font-size: 38px;
+                    margin-bottom: 30px;
+                    position: relative;
+                    &:before {
+                        @include border;
+                        left: 0;
+                        top: 25%;
+                        width: 17%;
+                    }
+                }
+            }
+            .moveTestimonials {
+                width: 7000px;
+                margin: 0 auto;
+                position: relative;
+                transition: all 800ms ease;
+                right: 0;
+                .testimonials {
+                    max-width: 6.5%;
+                    margin-right: 50px;
+                    float: left;
+                    transition: all 800ms ease;
+                    i {
+                        font-size: 38px;
+                        color: $goy;
+                        margin-top: 40px;
+                    }
+                    #cursive {
+                        font-style: italic;
+                        color: $darkgray;
+                        line-height: 40px;
+                        margin-top: 20px;
+                        font-size: 26px;
+                    }
+                    .media {
+                        img {
+                            border-radius: 100%;
+                        }
+                        h3 {
+                            color: $goy;
+                            font-weight: bold;
+                            margin: 0;
+                            margin-left: 20px;
+                        }
+                        p {
+                            color: lightgray;
+                            font-style: italic;
+                            font-size: 16px;
+                            margin: 10px 0;
+                            margin-left: 20px;
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+            .dotes {
+                .dot {
+                    height: 15px;
+                    width: 15px;
+                    background: lightgray;
+                    border-radius: 100%;
+                    display: inline-block;
+                    margin: 0px 10px;
+                    cursor: pointer;
+                    &:hover {
+                        background: $goy;
+                    }
+                }
+                .active {
+                    width: 17px;
+                    height: 17px;
+                    background: $goy;
+                }
+            }
+        }
+    }
+}
+
+.ourTeam {
+    background: $boz;
+    h1 {
+        @include tittle;
+        font-size: 40px;
+        margin: 0;
+        padding: 50px 0 0 0;
+        &:before {
+            @include border;
+        }
+    }
+    .team {
+        max-width: 1170px;
+        overflow: hidden;
+        margin: -10px auto;
+        .teamMove {
+            line-height: 40px;
+            width: 15000px;
+            position: relative;
+            right: 0;
+            transition: all 800ms ease;
+            .mediaPerson {
+                width: 350px;
+                margin-right: 50px;
+                float: left;
+                padding: 1% 0;
+                padding-bottom: 30px;
+                h3 {
+                    color: $goy;
+                    margin: 0;
+                    margin-left: 10px;
+                }
+                p {
+                    color: $darkgray;
+                    margin: 0;
+                    margin-left: 10px;
+                    font-style: italic;
+                }
+                a {
+                    margin: 0;
+                    margin-left: 10px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: black;
+                    i {
+                        color: $goy;
+                        font-size: 24px;
+                        margin-right: 10px;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    #mediaInfo {
+        margin: 30px 0;
+        line-height: 20px;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .dotesMedia {
+        margin-left: 45%;
+        padding: 5% 0;
+        .dotMedia {
+            height: 15px;
+            width: 15px;
+            background: lightgray;
+            border-radius: 100%;
+            display: inline-block;
+            margin: 0px 10px;
+            cursor: pointer;
+            &:hover {
+                background: $goy;
+            }
+        }
+        .active {
+            width: 17px;
+            height: 17px;
+            background: $goy;
+        }
+    }
+}
+
+.features {
+    padding: 5% 0;
+    background: white;
+    h1 {
+        @include tittle;
+        &::before {
+            @include border;
+        }
+    }
+    .item {
+        padding: 40% 0px;
+        padding-bottom: 20px;
+        img {
+            width: 100%;
+        }
+        h3 {
+            color: $goy;
+            font-style: bold;
+        }
+        h6 {
+            line-height: 40px;
+            color: $darkgray;
+            font-size: 14px;
+            span {
+                font-size: 14px;
+                color: $sari;
+                margin-left: 10px;
+                cursor: pointer;
+                &:hover {
+                    color: $goy;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    background: $darkgray;
+                    margin: 10px -5px;
+                    height: 19px;
+                }
+            }
+        }
+        .ownBtn {
+            margin: 20px 5px;
+            transition: 0.3s all;
+            color: $darkgray;
+            &:hover {
+                background: $goy;
+                color: white;
+            }
+        }
+    }
+    .viewBtn {
+        @include btn;
+        margin: 0;
+        margin-left: 42%;
+        margin-bottom: 40px;
+        ;
+    }
+}
+
+.help {
+    .BackImg {
+        img {
+            max-width: 100%;
+            position: fixed;
+            bottom: 0;
+            z-index: -2;
+        }
+    }
+    .layot {
+        background: rgba(17, 90, 108, 0.4);
+        height: 100%;
+        width: 100%;
+        h1 {
+            @include tittle;
+            color: white;
+            margin: 0;
+            padding: 50px 0;
+        }
+        p {
+            color: white;
+            text-align: center;
+        }
+        .viewBtn {
+            @include btn;
+            margin-left: 42%;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+#map {
+    height: 400px;
+}
+
+.main {
+    background: white;
+    .icon {
+        padding: 100px 0;
+        .iconX {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            #fa-fa {
+                i {
+                    border-radius: 100%;
+                    background: $sari;
+                    font-size: 44px;
+                    color: white;
+                    padding: 20px 22px;
+                    text-align: center;
+                }
+            }
+            #fa-info {
+                font-size: 24px;
+                padding: 30px 0;
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background: #18afd3;
+    .bottom {
+        padding: 70px 0;
+        p {
+            margin-top: 10px;
+            color: $boz;
+            a {
+                color: $boz;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        img {
+            padding-bottom: 50px;
+        }
+        .social {
+            ul {
+                list-style-type: none;
+                float: right;
+                li {
+                    display: inline;
+                    margin: 0 10px;
+                    i {
+                        border-radius: 100%;
+                        background: $boz;
+                        color: $darkgray;
+                        font-size: 18px;
+                        padding: 15px;
+                        &:hover {
+                            background: $sari;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media-query responsive
+@media only screen and (max-width:1000px) {
+    .header {
+        height: 900px;
+    }
+    .mediaPerson {
+        width: 1155px !important;
+    }
+    #mediaInfo {
+        width: 28%;
+    }
+    .ourTeam {
+        .dotesMedia {
+            margin-left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .header {
+        height: 700px;
+    }
+    .head,
+    .homeHead p {
+        display: none;
+    }
+    .viewBtn {
+        margin-left: 0;
+    }
+    .dotesMedia {
+        margin-left: 0;
+    }
+}
+
+// media-query responsive

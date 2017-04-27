@@ -1,0 +1,53 @@
+html,
+body {
+    margin: 0px;
+}
+
+.wrapper{
+     width: 1170px;
+    margin: 0 auto;
+}
+
+.row{
+    width: 390px;    
+    margin-bottom: 20px;
+    float: left;
+}
+
+.row div{
+    width: 380px;
+    margin: 5px 4px;
+    position: relative;
+    
+    border: 1px black solid;
+}
+
+.row div img{
+    width: 380px;
+    height: 350px;
+}
+
+.row .dateTime{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: silver;
+    width: 50px;
+    height: 40px;
+}
+
+.row .dateTime span{
+    padding: 8px 8px;
+}
+
+.row div h1{
+    width: 380px;
+    padding: 0px 0 20px 0;
+}
+
+.row .socialButtons span{    
+     padding: 2px 40px;
+     border-left: 1px black solid;
+     margin: 2px 2px 0 2px;
+}
+

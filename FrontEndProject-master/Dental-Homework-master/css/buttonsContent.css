@@ -1,0 +1,36 @@
+.content {
+  padding-bottom: 100px; }
+  .content .list {
+    padding-top: 100px; }
+    .content .list .title {
+      text-transform: uppercase; }
+      .content .list .title .textLine {
+        position: relative;
+        height: 1px;
+        padding: 0;
+        background: #e5e5e5;
+        margin-bottom: 22px;
+        border: none; }
+        .content .list .title .textLine:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 1px;
+          width: 50px;
+          background: #f57e57; }
+  .content .viewBtn {
+    background: #f57e57;
+    border-radius: 20px;
+    color: white;
+    margin-top: 50px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-weight: bold;
+    transition: 0.3s ease-out;
+    margin: 0;
+    border: none; }
+    .content .viewBtn:hover {
+      background: #18afd3; }
+
+/*# sourceMappingURL=buttonsContent.css.map */
